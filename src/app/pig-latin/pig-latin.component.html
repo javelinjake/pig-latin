@@ -1,0 +1,16 @@
+<h1>Pig Latin Translator</h1>
+<p>Enter any word and press translate</p>
+
+<form name="form" (ngSubmit)="f.form.valid && submit()" #f="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !word.valid }">
+        <input type="text" class="form-control" name="word" [(ngModel)]="model.word" #word="ngModel" required />
+    </div>
+    <div class="form-group">
+        <button [disabled]="!f.form.valid" class="btn btn-primary">Translate</button>
+    </div>
+</form>
+
+<div *ngIf="pigLatinWord">
+    <h2>Translated word:</h2>
+    <p class="highlight">{{pigLatinWord}}</p>
+</div>

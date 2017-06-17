@@ -1,0 +1,41 @@
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	color: $color__button_text;
+	background-color: $color__button_bg;
+	border: none;
+	font-size: 1rem;
+	line-height: 1rem;
+	padding: 1rem 1.5rem;
+	width: 100%;
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: $font__heading;
+    height: auto;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: middle;
+    -webkit-appearance: none;
+	text-decoration: none;
+
+	@include transition(all 0.2s ease);
+
+	&:not(&:disabled):hover {
+		color: $color__button_text-hover;
+		background-color: $color__button-hover;
+	}
+
+	&:active,
+	&:focus {
+		color: $color__button_text;
+		background-color: $color__button_bg;
+		outline: none;
+	}
+
+	&:disabled {
+		opacity: .5;
+	}
+}

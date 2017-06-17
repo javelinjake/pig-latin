@@ -1,0 +1,29 @@
+a {
+	display: block;
+	color: $color__link;
+	text-decoration: none;
+
+	&:hover {
+		color: $color__link-hover;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		outline: none;
+	}
+
+	@include transition(color 0.2s ease);
+}
+
+h1, h2, {
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2rem }
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}

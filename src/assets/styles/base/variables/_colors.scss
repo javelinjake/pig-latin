@@ -1,0 +1,9 @@
+//Colours
+$color__text: #333;
+$color__link: #f36639;
+$color__link-hover: darken($color__link, 15%);
+
+$color__button_text: $color__text;
+$color__button_bg: $color__link;
+$color__button-hover: $color__link-hover;
+$color__button_text-hover: #fff;

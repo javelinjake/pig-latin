@@ -1,0 +1,38 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+  font-family: $font__main;
+  font-size: $font__size;
+  line-height: $font__line-height;
+  margin: 0;
+  color: #111;
+  background-color: #fff;
+  text-align: center;
+
+  // Font smoothing
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+.page-content {
+	padding: 2rem;
+	max-width: 30rem;
+    margin: 0 auto;
+}
